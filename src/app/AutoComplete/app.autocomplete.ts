@@ -46,7 +46,7 @@ import { debounceTime, distinctUntilChanged, map, switchMap, tap } from 'rxjs/op
                 this.isLoading = false;
                 this.cities = res;
             });
-            var keydown = fromEvent(this.cityInput.nativeElement, 'keydown');
+            let keydown = fromEvent(this.cityInput.nativeElement, 'keydown');
             keydown.subscribe((x: KeyboardEvent) =>{
            
               if(this.cities.length > 0)
