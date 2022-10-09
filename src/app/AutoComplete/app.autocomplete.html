@@ -1,0 +1,19 @@
+<div class="card container">
+    <div class="label">
+      <label for="car">Search city by name: </label>
+    </div>
+    <div>
+        <input id="city" #citySearch placeholder="Search City" type="text" autocomplete="off"
+        (click)="showDivResult = true">
+    </div>
+    <div class="div-result" [hidden]="!showDivResult">
+        <div class="search">
+          <div *ngFor="let city of cities;let i = index"
+          tappable #menuItems (click)="setCity(city)" class="search-result">
+              {{city.name}}
+          </div>     
+        </div>
+        <p class="search" *ngIf="cities && cities.length <= 0 && !isLoading">No city found</p>
+        <p class="search" [hidden]="!isLoading">Searching city...</p>
+      </div>
+</div>

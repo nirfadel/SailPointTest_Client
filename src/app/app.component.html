@@ -1,0 +1,8 @@
+<app-auto-complete (cityEvent)="setCity($event)"> </app-auto-complete>
+
+<div *ngIf="city">
+   <h2>Selected city: {{city.name}} from country: {{city.country}}</h2>  
+    <div>
+       <h3>Geo Name Id: {{city.geoNameId}}</h3> 
+    </div>
+</div>

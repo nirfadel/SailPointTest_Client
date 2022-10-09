@@ -1,0 +1,59 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  input[type=text] {
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    border: 2px solid #eee;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    width:200px;
+  }
+
+
+  .container {
+	width: 100%;
+	height: 500px;
+	padding: 4%;
+	background-color: #bbcef8;
+}
+
+.search {
+	z-index: 1000;
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+    margin: 5px;
+    opacity: 0.90;
+	background-color: #000000;
+    font-family: sans-serif;
+    color: white;
+   
+}
+
+.search-result {
+	padding: 4px;
+	font-size: 15px;
+}
+
+.search-result:hover {
+    background: #707070;
+    color: #fff;
+    font-size: 17px;
+}
+.search-result-selected {
+    background: #707070;
+    color: #fff;
+    font-size: 17px;
+}
+
+.label {
+	font-size: 20px;
+	color: #707070;
+    padding-left: 11px;
+}
+
+.div-result{
+    width:200px;
+}
